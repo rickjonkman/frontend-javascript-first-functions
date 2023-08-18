@@ -27,7 +27,11 @@ console.log(greeter("Rick"));
 // minutesToSeconds(3) geeft 180
 // minutesToSeconds(23) geeft 1380
 
+function minutesToSeconds(minutes) {
+  return minutes * 60;
+}
 
+console.log(minutesToSeconds(5));
 
 /* Opdracht 3 */
 // Schrijf een functie genaamd merge, die twee strings verwacht en deze aan elkaar geplakt teruggeeft.
@@ -36,7 +40,11 @@ console.log(greeter("Rick"));
 // merge("abra", "cadabra") geeft "abracadabra"
 // merge("zoet", "sappig") geeft "zoetsappig"
 
+const merge = (wordOne, wordTwo) => {
+  return wordOne + wordTwo;
+}
 
+console.log(merge("pa", "ling"));
 
 
 /* Opdracht  4 */
@@ -45,7 +53,11 @@ console.log(greeter("Rick"));
 // calculateDogYears(6) geeft "Jouw hond is 42 jaar oud in mensenjaren."
 // calculateDogYears(2) geeft "Jouw hond is 14 jaar oud in mensenjaren."
 
+const calculateDogYears = (dogYears) => {
+  return dogYears * 7;
+}
 
+console.log(calculateDogYears(5));
 
 /* Opdracht 5 */
 // Schrijf een functie genaamd wrapper, die twee parameters verwacht: een woord en een karakter
@@ -55,6 +67,11 @@ console.log(greeter("Rick"));
 // wrapper("beep", "_") geeft "_beep_"
 // wrapper("kaas", "Q") geeft "QkaasQ"
 
+function wrapper(word, character) {
+  return character + word + character;
+}
+
+console.log(wrapper("Haaai", "*"));
 
 
 /* Bonus opdracht  */
@@ -63,4 +80,8 @@ console.log(greeter("Rick"));
 // createDetailString({ firstName: 'Jan', lastName: 'Jansen', profession: 'docent'}) geeft "Het beroep vam Jan Jansen is docent."
 // createDetailString({ firstName: 'Kees', lastName: 'Klaasen', profession: 'brandweerman'}) geeft "Het beroep vam Kees Klaasen is brandweerman."
 
+function createDetailString(firstName, lastName, profession) {
+  return `Het beroep van ${firstName} ${lastName} is ${profession}`;
+}
 
+console.log(createDetailString("Hans", "Klok", "tovenaar"));
